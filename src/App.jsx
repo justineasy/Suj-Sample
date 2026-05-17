@@ -82,9 +82,16 @@ function CommercialPopup({ onClose }) {
       <div onClick={onClose} style={{ position: "fixed", inset: 0, zIndex: 1000, background: "rgba(0,0,0,0.85)", backdropFilter: "blur(8px)", animation: "fadeIn 0.3s ease" }} />
       <div style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 1001, width: "min(700px, 92vw)", borderRadius: "20px", overflow: "hidden", boxShadow: "0 40px 80px rgba(0,0,0,0.8), 0 0 60px rgba(255,106,0,0.15)", border: "1px solid rgba(255,106,0,0.2)", animation: "popupIn 0.4s cubic-bezier(.22,1,.36,1)" }}>
         <div style={{ position: "relative", aspectRatio: "16/9", background: "#000" }}>
-          <video ref={videoRef} muted={muted} loop playsInline style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}>
-            <source src="https://cdn.coverr.co/videos/coverr-making-a-burger-1583/1080p.mp4" type="video/mp4" />
-          </video>
+          <iframe
+  width="100%"
+  height="100%"
+  src="https://www.youtube.com/embed/H8IBZjzBRoM?autoplay=1&mute=0"
+  title="Suj Commercial"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  style={{ display: "block", border: "none" }}
+/>
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 50%)", pointerEvents: "none" }} />
           <div style={{ position: "absolute", top: 0, left: 0, right: 0, padding: "16px 20px", display: "flex", justifyContent: "space-between", alignItems: "center", background: "linear-gradient(to bottom, rgba(0,0,0,0.6), transparent)" }}>
             <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "10px", letterSpacing: "4px", textTransform: "uppercase", color: "#ff6a00" }}>✦ Suj · Premium Food</span>
